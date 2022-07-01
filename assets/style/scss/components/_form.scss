@@ -1,0 +1,21 @@
+.form-control {
+  label {
+    display: block;
+  }
+  input,textarea {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    background: map-get($themes-colors, info);
+    border-width: 1px;
+    &::placeholder {
+      color: map-get($themes-colors, lightblurry);
+    }
+  }
+  input[type="checkbox"] {
+    width: auto;
+  }
+  select {
+    padding: 8px 16px;
+  }
+}

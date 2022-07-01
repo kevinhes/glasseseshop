@@ -1,0 +1,65 @@
+// themes color
+
+$themes-colors: (
+  'primary': #AA0601,
+  'secondary': #650300,
+  'info': #FBF2F2,
+  'light': white,
+  'dark': black,
+  'lightblurry': #DEE2E6,
+  'darkblurry': #555555
+);
+
+// break point 
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1140px;
+
+// grid detail
+
+$gutter-width: 30px;
+$grid-num: 12;
+
+//font size
+$font-basesize: 1rem;
+//14 16 17 18 19 20 24 28 32 36 42 48 64 72
+$font-size: (
+  '1': $font-basesize * .875,   //14
+  '2': $font-basesize,          //16
+  '3': $font-basesize * 1.125,  //18
+  '4': $font-basesize * 1.25,   //20
+  '5': $font-basesize * 1.5,    //24
+  '6': $font-basesize * 1.75,   //28
+  '7': $font-basesize * 2,      //32
+  '8': $font-basesize * 2.25,   //36
+  '9': $font-basesize * 2.625,  //42
+  '10': $font-basesize * 3,     //48
+  '11': $font-basesize * 4,     //64
+  '12': $font-basesize * 4.5,     //72
+);
+
+//space
+$space-basesize: 1rem;
+//4 6 8 12 14 16 20 24 26 28 30 32 36 40 48 56 60 65 72 80 96 104 160
+$space: (
+  '0': 0px,                      //0
+  '1': $space-basesize * .25,    //4
+  '2': $space-basesize * .5,     //8
+  '3': $space-basesize * .75,    //12
+  '4': $space-basesize * .875,   //14
+  '5': $space-basesize,          //16
+  '6': $space-basesize * 1.25,   //20
+  '7': $space-basesize * 1.5,    //24
+  '8': $space-basesize * 1.625,  //26
+  '9': $space-basesize * 1.75,   //28
+  '10': $space-basesize * 1.875, //30
+  '11': $space-basesize * 2,     //32
+  '12': $space-basesize * 2.25,  //36
+  '13': $space-basesize * 2.5,   //40
+  '14': $space-basesize * 3,     //48
+  '15': $space-basesize * 3.75,  //60
+  '16': $space-basesize * 4,     //64
+  '17': $space-basesize * 6,     //96
+);

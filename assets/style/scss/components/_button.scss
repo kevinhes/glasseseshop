@@ -1,0 +1,15 @@
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+}
+
+@each $colors, $value in $themes-colors {
+  .btn-#{$colors} {
+    background: $value;
+    color: map-get($themes-colors, light);
+  }
+}

@@ -1,0 +1,63 @@
+@each $keys, $value in $themes-colors {
+  .bg-#{$keys} {
+    background: $value;
+  }
+  @include media-break-up($md) {
+    .bg-md-#{$keys} {
+      background: $value;
+    } 
+  }
+  @include media-break-up($lg) {
+    .bg-lg-#{$keys} {
+      background: $value;
+    } 
+  }
+}
+
+.bg-indexGlasses {
+  height: 134px;
+  min-width: 345px;
+  width: 100%;
+  @include media-break-up($md) {
+    height: 168px;
+    min-width: 390px;
+    width: 100%;
+  }
+  @include media-break-up($lg) {
+    height: 320px;
+    max-width: 635px;
+    width: 100%;
+  }
+}
+
+.bg-joint {
+  background-size: cover;
+  background-position: center;
+  height: 291px;
+  @include media-break-up($md) {
+    height: 278px;
+  }
+  @include media-break-up($lg) {
+    height: 455px;
+  }
+}
+
+.bg-optical {
+  background-image: url(/assets/images/product-1.png);
+}
+
+.bg-sunglasses {
+  background-image: url(/assets/images/product-2.png);
+}
+
+.bg-functional {
+  background-image: url(/assets/images/product-3.png);
+}
+
+.bg-double {
+  background-image: url(/assets/images/product-8.png);
+}
+
+.bg-youth {
+  background-image: url(/assets/images/product-9.png);
+}

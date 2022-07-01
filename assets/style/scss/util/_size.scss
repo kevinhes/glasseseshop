@@ -1,0 +1,33 @@
+$size-value: (
+  0,
+  10,
+  20,
+  25,
+  30,
+  50,
+  65,
+  75,
+  100
+);
+
+@each $value in $size-value {
+  .w-#{$value} {
+    width: $value * 1%;
+  }
+}
+
+@include media-break-up($md) {
+  @each $value in $size-value {
+    .w-md-#{$value} {
+      width: $value  * 1%;
+    }
+  } 
+}
+
+@include media-break-up($lg) {
+  @each $value in $size-value {
+    .w-lg-#{$value} {
+      width: $value  * 1%;
+    }
+  } 
+}

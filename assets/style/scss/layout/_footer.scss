@@ -1,0 +1,43 @@
+footer {
+  padding: 24px 0;
+  @include media-break-up($md) {
+    padding: 32px 0;
+  }
+  @include media-break-up($md) {
+    padding: 32px 0 39px 0;
+  }
+}
+
+.footerNavigation {
+  display: none;
+  @include media-break-up($md) {
+    display: flex;
+    margin-bottom: 18px;
+  }
+  @include media-break-up($lg) {
+    display: flex;
+    margin-bottom: 36px;
+  }
+  li {
+    &:first-child a{
+      padding-left: 0;
+    }
+  }
+  &-link {
+    color: map-get($themes-colors, light);
+    padding: 0 20px;
+    @include media-break-up($lg) {
+      padding: 0 24px;
+    }
+  }
+  
+}
+
+.foorer-icon {
+  width: 24px;
+  height: 24px;
+  @include media-break-up($lg) {
+    width: 48px;
+    height: 48px;
+  }
+}

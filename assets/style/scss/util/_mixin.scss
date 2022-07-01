@@ -1,0 +1,11 @@
+@mixin media-break-up($breakpoint) {
+  @media(min-width:$breakpoint) {
+    @content
+  }
+};
+
+@mixin media-break-down($breakpoint) {
+  @media(max-width:$breakpoint) {
+    @content
+  }
+}

@@ -1,0 +1,62 @@
+@each $keys, $value in $font-size {
+  .fs-#{$keys} {
+    font-size: $value;
+  }
+  @include media-break-up($md) {
+    .fs-md-#{$keys} {
+      font-size: $value;
+    } 
+  }
+  @include media-break-up($lg) {
+    .fs-lg-#{$keys} {
+      font-size: $value;
+    } 
+  }
+}
+
+@each $colors, $value in $themes-colors {
+  .text-#{$colors} {
+    color: $value;
+  }
+  @include media-break-up($md) {
+    .text-md-#{$colors} {
+      color: $value;
+    } 
+  }
+  @include media-break-up($lg) {
+    .text-lg-#{$colors} {
+      color: $value;
+    } 
+  }
+}
+
+$text-direction: (left,center,right);
+
+@each $direction in $text-direction {
+  .text-#{$direction} {
+    text-align: $direction;
+  }
+}
+
+@include media-break-up($md) {
+  @each $direction in $text-direction {
+    .text-md-#{$direction} {
+      text-align: $direction;
+    }
+  } 
+
+  @include media-break-up($lg) {
+    @each $direction in $text-direction {
+      .text-lg-#{$direction} {
+        text-align: $direction;
+      }
+    } 
+  }}
+
+$text-weight: (light,normal,bold);
+
+@each $weight in $text-weight {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}

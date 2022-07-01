@@ -1,0 +1,64 @@
+.container {
+  margin: 0 auto;
+  max-width: 767px;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+}
+
+@include media-break-up($md) {
+  .container {
+    margin: 0 auto;
+    max-width: 991px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@include media-break-up($lg) {
+  .container {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+  }
+}
+
+.row {
+  display: flex;
+  margin-left: -($gutter-width / 2);
+  margin-right: -($gutter-width / 2);
+  flex-wrap: wrap;
+}
+
+%col {
+  position: relative;
+  min-height: 1px;
+  padding-left: $gutter-width/2;
+  padding-right: $gutter-width/2;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+@for $item from 1 through $grid-num {
+  .col-#{$item} {
+    @extend %col
+  }
+};
+
+@include media-break-up($md) {
+  @for $item from 1 through $grid-num {
+    .col-md-#{$item} {
+      max-width: 100% * ($item / $grid-num);
+      flex: 0 0 (100% * ($item / $grid-num));
+    }
+  };
+}
+
+@include media-break-up($lg) {
+  @for $item from 1 through $grid-num {
+    .col-lg-#{$item} {
+      max-width: 100% * ($item / $grid-num);
+      flex: 0 0 (100% * ($item / $grid-num));
+    }
+  };
+}

@@ -1,0 +1,336 @@
+.indexSection {
+  padding-top: 32px;
+  padding-bottom: 40px;
+  @include media-break-up($md) {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+  @include media-break-up($lg) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.indexSection-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  @include media-break-up($md) {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  @include media-break-up($lg) {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+.rec-img {
+  height: 256px;
+}
+
+.rec-cardBody {
+  height: 204px;
+}
+
+.productNavbar {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    width: 33.333%;
+    border: 1px solid map-get($themes-colors, lightblurry);
+    position: relative;
+  }
+  &-link {
+    text-align: center;
+    color: map-get($themes-colors, dark);
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include media-break-up($md) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    @include media-break-up($md) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+  &-active::after{
+    content: '';
+    height: 4px;
+    position: absolute;
+    background: map-get($themes-colors, primary);
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    @include media-break-up($md) {
+      height: 8px;
+    }
+  }
+}
+
+.productSection {
+  padding-top: 32px;
+  padding-bottom: 56px;
+  li {
+    margin-bottom: 32px;
+    &:nth-last-child(1) {
+      margin-bottom: 40px;
+    }
+  }
+  &-title {
+    text-align: center;
+    font-size: 20px;
+  }
+  &-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-productImg {
+    height: 166px;
+  }
+  @include media-break-up($md) {
+    padding-top: 56px;
+    padding-bottom: 96px;
+    li {
+      margin-bottom: 72px;
+      &:nth-last-child(1) {
+        margin-bottom: 65px;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 65px;
+      }
+    }
+    &-title {
+      font-size: 32px;
+    }
+    &-subtitle {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    &-productImg {
+      height: 164px;
+    }
+  }
+  @include media-break-up($lg) {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    li {
+      margin-bottom: 104px;
+      &:nth-last-child(1) {
+        margin-bottom: 96px;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 96px;
+      }
+      &:nth-last-child(3) {
+        margin-bottom: 96px;
+      }
+      &:nth-last-child(4) {
+        margin-bottom: 96px;
+      }
+    }
+    &-title {
+      font-size: 42px;
+    }
+    &-subtitle {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.productColor {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  &-1{
+    background: #5F3E2D
+  }
+  &-2{
+    background: #B75929
+  }
+  @include media-break-up($md) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.pageSection {
+  padding-top: 36px;
+  padding-bottom: 56px;
+  &-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 8px;
+    border-left: 4px solid map-get($themes-colors, primary);
+    margin-bottom: 24px;
+  }
+  &-subtitle {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .card-img {
+    height: 164px;
+  }
+  select {
+    flex-grow: 1;
+  }
+  @include media-break-up($md) {
+    padding-top: 60px;
+    padding-bottom: 96px;
+    &-title {
+      font-size: 48px;
+      line-height: 67px;
+      padding-left: 16px;
+      margin-bottom: 40px;
+    }
+    &-subtitle {
+      font-size: 32px;
+      margin-bottom: 32px;
+      font-weight: bold;
+    }
+    select {
+      flex-grow: 0;
+      width: 237px
+    }
+  }
+  @include media-break-up($lg) {
+    padding-top: 96px;
+    padding-bottom: 160px;
+    &-title {
+      line-height: 70px;
+      margin-bottom: 60px;
+      border-width: 8px;
+    }
+    &-subtitle {
+      font-size: 32px;
+      margin-bottom: 36px;
+    }
+    .card-img {
+      height: 224px;
+    }
+    select {
+      width: 324px;
+    }
+  }
+}
+
+.map {
+  height: 211px;
+  width: 100%;
+  @include media-break-up($md) {
+    height: 422px;
+  }
+}
+
+.faqSection {
+  li {
+    margin-bottom: 20px;
+    p {
+      font-size: 14px;
+    }
+    p:first-child {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    p:nth-child(2) {
+      margin-bottom: 21px;
+    }
+  }
+  @include media-break-up($md) {
+    li {
+      margin-bottom: 24px;
+      p {
+        font-size: 16px;
+      }
+      p:first-child {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      p:nth-child(2) {
+        margin-bottom: 0px;
+        padding-left: 59px;
+      }
+      p:last-child {
+        padding-left: 59px;
+      }
+    }
+  }
+  @include media-break-up($lg) {
+    li {
+      margin-bottom: 32px;
+      p:nth-child(2) {
+        padding-left: 95px;
+      }
+      p:last-child {
+        padding-left: 95px;
+      }
+    }
+  }
+}
+
+.blog-img {
+  height: 217px;
+  @include media-break-up($md) {
+    height: 208px;
+  }
+  @include media-break-up($lg) {
+    height: 400px;
+  }
+}
+
+.blog-articleImg {
+  height: 225px;
+  @include media-break-up($md) {
+    height: 292px;
+  }
+  @include media-break-up($lg) {
+    height: 472px;
+  }
+}
+
+.articleSection {
+  padding-bottom: 56px;
+}
+
+.blogNav {
+  background: map-get($themes-colors, secondary);
+  margin-bottom: 8px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-link {
+    color: map-get($themes-colors, light);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @include media-break-up($md) {
+    li:first-child a {
+      padding-left: 0;
+    }
+    &-list {
+      justify-content: start;
+    }
+    &-link {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  @include media-break-up($lg) {
+    &-list {
+      justify-content: start;
+    }
+    &-link {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 24px;
+      padding-right: 24px;
+      font-size: 20px;
+    }
+  }
+}

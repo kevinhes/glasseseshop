@@ -1,0 +1,137 @@
+$display-values: (
+  'flex': flex,
+  'none': none,
+  'block': block,
+  'inline': inline,
+);
+
+@each $display, $value in $display-values {
+  .d-#{$display} {
+    display: $value;
+  }
+};
+
+@include media-break-up($md) {
+  @each $display, $value in $display-values {
+    .d-md-#{$display} {
+      display: $value;
+    }
+  }
+};
+
+@include media-break-up($lg) {
+  @each $display, $value in $display-values {
+    .d-lg-#{$display} {
+      display: $value;
+    }
+  }
+};
+
+$position-words: (
+  start,
+  end,
+  center,
+  space-between,
+  space-around,
+);
+
+@each $value in $position-words {
+  .justify-content-#{$value} {
+    justify-content: $value;
+  }
+};
+
+@include media-break-up($md) {
+  @each $value in $position-words {
+    .justify-content-md-#{$value} {
+      justify-content: $value;
+    }
+  };
+}
+
+@include media-break-up($lg) {
+  @each $value in $position-words {
+    .justify-content-lg-#{$value} {
+      justify-content: $value;
+    }
+  };
+}
+
+@each $value in $position-words {
+  .align-items-#{$value} {
+    align-items: $value;
+  }
+};
+
+@include media-break-up($md) {
+  @each $value in $position-words {
+    .align-items-md-#{$value} {
+      align-items: $value;
+    }
+  };
+}
+
+@include media-break-up($lg) {
+  @each $value in $position-words {
+    .align-items-lg-#{$value} {
+      align-items: $value;
+    }
+  };
+}
+
+$flex-direction: (
+  row,
+  row-reverse,
+  column,
+  column-reverse,
+);
+
+@each $value in $flex-direction {
+  .flex-#{$value} {
+    flex-direction: $value;
+  }
+};
+
+@include media-break-up($md) {
+  @each $value in $flex-direction {
+    .flex-md-#{$value} {
+      flex-direction: $value;
+    }
+  };
+}
+
+@include media-break-up($lg) {
+  @each $value in $flex-direction {
+    .flex-lg-#{$value} {
+      flex-direction: $value;
+    }
+  };
+}
+
+$order-num: 10;
+
+@for $num from 1 to $order-num {
+  .order-#{$num} {
+    order: $num;
+  }
+};
+
+@include media-break-up($md) {
+  @for $num from 1 to $order-num {
+    .order-md-#{$num} {
+      order: $num;
+    }
+  } 
+};
+
+@include media-break-up($lg) {
+  @for $num from 1 to $order-num {
+    .order-lg-#{$num} {
+      order: $num;
+    }
+  } 
+};
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

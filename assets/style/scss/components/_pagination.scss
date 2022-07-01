@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  li:first-child a{
+    padding: 11px 10px;
+    font-size: 17px;
+  }
+  li:last-child a{
+    padding: 11px 10px;
+    font-size: 17px;
+    background: map-get($themes-colors, lightblurry);
+  }
+  &-link {
+    color: map-get($themes-colors, darkblurry);
+    display: block;
+    padding: 12px 15px;
+    border: 1px solid map-get($themes-colors, darkblurry);
+    margin-left: -1px;
+  }
+  &-active {
+    background: map-get($themes-colors, dark);
+    color: map-get($themes-colors, light);
+  }
+  @include media-break-up($md) {
+    li:first-child a{
+      padding: 11px 10px;
+      font-size: 19px;
+    }
+    li:last-child a{
+      padding: 11px 10px;
+      font-size: 19px;
+      background: map-get($themes-colors, lightblurry);
+    }
+    &-link {
+      padding: 12px 16px;
+      font-size: 18px;
+    }
+  }
+}

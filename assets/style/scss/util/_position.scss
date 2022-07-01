@@ -1,0 +1,34 @@
+$positions: (
+  static,
+  relative,
+  absolute,
+  sticky
+);
+
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position;
+  }
+};
+
+@include media-break-up($md) {
+  @each $position in $positions {
+    .position-md-#{$position} {
+      position: $position;
+    }
+  };
+}
+
+@include media-break-up($lg) {
+  @each $position in $positions {
+    .position-lg-#{$position} {
+      position: $position;
+    }
+  };
+}
+
+@include media-break-up($md) {
+  .tranlateY-md-0 {
+    transform: translateY(0);
+  }
+}
