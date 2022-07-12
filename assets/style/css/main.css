@@ -928,13 +928,13 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../images/banner-sm.png);
+  background-image: url(../../images/banner-sm.png);
   height: 394px;
 }
 
 @media (min-width: 768px) {
   .banner-index {
-    background-image: url(../images/banner.png);
+    background-image: url(../../images/banner.png);
     height: 840px;
   }
 }
@@ -963,7 +963,7 @@ footer {
 }
 
 .bannerProduct-sunglassesRight {
-  background-image: url(../images/product-2-color.png);
+  background-image: url(../../images/product-2-color.png);
 }
 
 @media (min-width: 768px) {
