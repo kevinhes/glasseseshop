@@ -28,16 +28,16 @@
 .banner-index {
   display: flex;
   align-items: center;
-  background-image: url(/assets/images/banner-sm.png);
+  background-image: url(../../../images/banner-sm.png);
   height: 394px;
   @include media-break-up($md) {
-    background-image: url(/assets/images/banner.png);
+    background-image: url(../../../images/banner.png);
   height: 840px;
   }
 }
 
 .banner-joint {
-  background-image: url(/assets/images/bg.png);
+  background-image: url(../../../images/bg.png);
 }
 
 .bannerProduct {
@@ -55,7 +55,7 @@
     background-image: url(https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   }
   &-sunglassesRight {
-    background-image: url(/assets/images/product-2-color.png);
+    background-image: url(../../../images/product-2-color.png);
   }
   @include media-break-up($md) {
     height: 304px;

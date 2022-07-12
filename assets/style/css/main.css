@@ -928,19 +928,19 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/assets/images/banner-sm.png);
+  background-image: url(../../../images/banner-sm.png);
   height: 394px;
 }
 
 @media (min-width: 768px) {
   .banner-index {
-    background-image: url(/assets/images/banner.png);
+    background-image: url(../../../images/banner.png);
     height: 840px;
   }
 }
 
 .banner-joint {
-  background-image: url(/assets/images/bg.png);
+  background-image: url(../../../images/bg.png);
 }
 
 .bannerProduct {
@@ -963,7 +963,7 @@ footer {
 }
 
 .bannerProduct-sunglassesRight {
-  background-image: url(/assets/images/product-2-color.png);
+  background-image: url(../../../images/product-2-color.png);
 }
 
 @media (min-width: 768px) {
@@ -1762,23 +1762,23 @@ footer {
 }
 
 .bg-optical {
-  background-image: url(/assets/images/product-1.png);
+  background-image: url(../../../images/product-1.png);
 }
 
 .bg-sunglasses {
-  background-image: url(/assets/images/product-2.png);
+  background-image: url(../../../images/product-2.png);
 }
 
 .bg-functional {
-  background-image: url(/assets/images/product-3.png);
+  background-image: url(../../../images/product-3.png);
 }
 
 .bg-double {
-  background-image: url(/assets/images/product-8.png);
+  background-image: url(../../../images/product-8.png);
 }
 
 .bg-youth {
-  background-image: url(/assets/images/product-9.png);
+  background-image: url(../../../images/product-9.png);
 }
 
 .mx-auto {
