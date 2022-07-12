@@ -297,7 +297,7 @@ img {
 .navbar h1 {
   width: 48px;
   height: 30px;
-  background-image: url(/assets/images/logo.png);
+  background-image: url(../../images/logo.png);
   background-size: cover;
 }
 
@@ -1762,23 +1762,23 @@ footer {
 }
 
 .bg-optical {
-  background-image: url(../images/product-1.png);
+  background-image: url(../../images/product-1.png);
 }
 
 .bg-sunglasses {
-  background-image: url(../images/product-2.png);
+  background-image: url(../../images/product-2.png);
 }
 
 .bg-functional {
-  background-image: url(../images/product-3.png);
+  background-image: url(../../images/product-3.png);
 }
 
 .bg-double {
-  background-image: url(../images/product-8.png);
+  background-image: url(../../images/product-8.png);
 }
 
 .bg-youth {
-  background-image: url(../images/product-9.png);
+  background-image: url(../../images/product-9.png);
 }
 
 .mx-auto {
